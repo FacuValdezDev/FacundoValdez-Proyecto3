@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@300&family=Poppins:wght@300&family=Roboto+Mono:wght@300&family=Roboto:wght@100&family=Titillium+Web:wght@200&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  width: 100vw;
+  height: 20vh;
+  margin-top: 10px;
+}
+.header .navbar {
+  display: flex;
+  background-color: rgb(0, 0, 0);
+  font-family: "Titillium Web", sans-serif;
+}
+.header .navbar .navbar-brand img {
+  height: 17vh;
+}
+.header .navbar .button,
+.header .navbar .button::before,
+.header .navbar .button::after,
+.header .navbar .button span,
+.header .navbar .button span::before,
+.header .navbar .button span::after {
+  transition: all ease 0.5s;
+}
+.header .navbar .button {
+  position: relative;
+  display: inline-block;
+  padding: 0.3em 2rem;
+  border: solid 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.header .navbar .button:hover {
+  box-shadow: 0 0 5em 0.5em rgba(50, 50, 150, 0.5);
+}
+.header .navbar .button span {
+  display: inline-block;
+  width: 100%;
+  padding: 0.6em 2em;
+}
+.header .navbar .button:hover span {
+  background-color: #fff;
+  color: #112;
+}
+.header .navbar .button::before,
+.header .navbar .button::after,
+.header .navbar .button span::before,
+.header .navbar .button span::after {
+  content: "";
+  position: absolute;
+  border: 1px;
+}
+.header .navbar .button::before,
+.header .navbar .button span::before {
+  border-style: solid none;
+}
+.header .navbar .button::before,
+.header .navbar .button span::after {
+  left: 0;
+  top: -0.4em;
+  width: 100%;
+  height: calc(100% + 0.8em);
+}
+.header .navbar .button::after,
+.header .navbar .button span::after {
+  border-style: none solid;
+}
+.header .navbar .button::after,
+.header .navbar .button span::before {
+  top: 0;
+  left: -0.4em;
+  height: 100%;
+  width: calc(100% + 0.8em);
+}
+.header .navbar .button:hover::after,
+.header .navbar .button:hover span::after {
+  transform: scaleY(0);
+}
+.header .navbar .button:hover::before,
+.header .navbar .button:hover span::before {
+  transform: scaleX(0);
+}
+.header .navbar .button:hover span::after,
+.header .navbar .button:hover span::before {
+  opacity: 0;
+}
+
+@media screen and (max-width: 576px) {
+  .navbarCont {
+    height: 40vh;
+    width: 100vw;
+    margin-left: -24px;
+    position: relative;
+    background-color: black;
+    padding: 20px;
+    z-index: 10;
+  }
+  .navbarCont .nav-item {
+    margin-top: 1.5rem;
+  }
+  .collapseContainer {
+    z-index: 11;
+  }
+  .smnavbar {
+    background-color: rgb(0, 0, 0);
+  }
+}
+main {
+  height: 150vh;
+}
+main .carouselContainer {
+  z-index: 1;
+}
+main .tituloPrincipal {
+  text-align: center;
+  border-bottom: 2px solid #7a7a7a;
+  padding-bottom: 10px;
+  margin: 0 50px;
+  font-family: "Alumni Sans", sans-serif;
+  z-index: 11;
+  position: relative;
+  margin-top: 150px;
+}
+main .sectionCards {
+  margin-top: 3em;
+}
+main .sectionCards .card {
+  padding: 10px;
+  margin: 0 10px;
+}
+
+@media screen and (max-width: 576px) {
+  .carouselContainer {
+    top: 100px;
+  }
+  .tituloPrincipal {
+    position: absolute;
+  }
+}
+footer {
+  background-color: black;
+}
+
+/*# sourceMappingURL=styles.css.map */

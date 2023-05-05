@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    width: 100vw;
+    height: 20vh;
+    margin-top: 10px;
+    .navbar{
+        display:flex;
+        background-color:$colorheader;
+        font-family: $fuenteheader;
+        .navbar-brand{
+            img{
+                height: 17vh;
+            }
+        }
+        .button,
+        .button::before,
+        .button::after,
+        .button span,
+        .button span::before,
+        .button span::after
+        {
+        transition: all ease .5s;
+        }
+        .button{
+        position: relative;
+        display: inline-block;
+        padding: 0.3em 2rem;
+        border: solid 1px;
+        text-transform: uppercase;
+        cursor: pointer;
+        }
+
+        .button:hover
+        {
+        box-shadow: 0 0 5em .5em rgba(50,50,150,0.5);
+        }
+
+        .button span
+        {
+        display: inline-block;
+        width: 100%;
+        padding: 0.6em 2em;
+        }
+
+        .button:hover span
+        {
+        background-color: #fff;
+        color: #112;
+        }
+
+        .button::before,
+        .button::after,
+        .button span::before,
+        .button span::after
+        {
+        content: '';
+        position: absolute;
+        border: 1px;
+        }
+
+        .button::before,
+        .button span::before
+        {
+        border-style: solid none;
+        }
+
+        .button::before,
+        .button span::after{
+        left: 0;
+        top: -0.4em;
+        width: 100%;
+        height: calc(100% + 0.8em);
+        }
+
+        .button::after,
+        .button span::after
+        {
+        border-style: none solid;
+        }
+
+        .button::after,
+        .button span::before
+        {
+        top: 0;
+        left: -0.4em;
+        height: 100%;
+        width: calc(100% + 0.8em);
+        }
+
+        .button:hover::after,
+        .button:hover span::after
+        {
+        transform: scaleY(0);
+        }
+
+        .button:hover::before,
+        .button:hover span::before
+        {
+        transform: scaleX(0);
+        }
+
+        .button:hover span::after,
+        .button:hover span::before
+        {
+        opacity: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 576px){
+    .navbarCont{
+        height: 40vh;
+        width: 100vw;
+        margin-left: -24px;
+        position: relative;
+        background-color: black;
+        padding: 20px;
+        z-index: 10;
+        .nav-item{
+            margin-top:1.5rem;
+        }
+    }
+    .collapseContainer{
+        z-index: 11;
+    }
+    .smnavbar{
+      background-color: $colorheader;
+    }
+}
