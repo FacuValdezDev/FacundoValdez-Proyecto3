@@ -9,7 +9,7 @@
     margin-top: 10px;
     .navbar{
         display:flex;
-        background-color:$colorheader;
+        background-color:$colorprincipal;
         font-family: $fuenteheader;
         .navbar-brand{
             img{
@@ -117,7 +117,7 @@
         width: 100vw;
         margin-left: -24px;
         position: relative;
-        background-color: black;
+        background-color: $colorprincipal;
         padding: 20px;
         z-index: 10;
         .nav-item{
@@ -128,6 +128,6 @@
         z-index: 11;
     }
     .smnavbar{
-      background-color: $colorheader;
+      background-color: $colorprincipal;
     }
 }

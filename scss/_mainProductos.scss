@@ -1,0 +1,67 @@
+.tituloCards{
+    text-align: center;
+    margin-top: 5rem;
+    h1{
+        font-size: $tamanotitulo;
+        font-family: $fuenteheader;
+    }
+    p{
+        font-family: $fuenteparrafo;
+        font-size: $tamanoparrafo;
+    }
+}
+.containerCards{
+    width: 100%;
+    display: flex;
+    margin-left: 1rem;
+    .cardProd{
+        margin-left:50px;
+        text-align: center;
+        border: 2px solid rgba(0, 0, 0, 0.322);
+        border-radius: 6px;
+        box-shadow: 10px 10px 5px rgba(83, 82, 82, 0.486);
+        background-color: $colorcards;
+        .h3Card{
+            border-top:2px solid #7a7a7a;
+            margin-top: 10px;
+            margin: 10px 20px;
+        }
+        p{
+            text-align: left;
+            margin-left: 2rem;
+        }
+        .precio{
+            font-size:2rem;
+            color: rgb(3, 3, 58);
+        }
+        .btn-precio{
+            background-color: rgb(59, 59, 129);
+            color: white;
+            text-decoration: none;
+            padding: 12px;
+            border-radius: 4px;
+            display: block;
+            margin: 0 4rem;
+            &:hover{
+                background-color: rgb(84, 84, 197);
+            }
+        }
+    }
+}
+/*Mq para celulares*/
+@media screen and (max-width: 576px){
+    main{
+        height: 430vh;
+        .tituloCards{
+            h1{
+                font-size: $tamanotitulosm;
+            }
+            p{
+                font-size: $tamanoparrafosm;
+            }
+        }
+        .containerCards{
+            margin-left: -1.5rem;
+        }
+    }
+}
