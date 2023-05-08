@@ -13,7 +13,9 @@
 .containerCards{
     width: 100%;
     display: flex;
+    margin-top: 5rem;
     margin-left: 1rem;
+    height: 120vh;
     .cardProd{
         margin-left:50px;
         text-align: center;
@@ -50,8 +52,8 @@
 }
 /*Mq para celulares*/
 @media screen and (max-width: 576px){
-    main{
-        height: 430vh;
+    .mainProd{
+        height: 435vh;
         .tituloCards{
             h1{
                 font-size: $tamanotitulosm;
@@ -62,6 +64,9 @@
         }
         .containerCards{
             margin-left: -1.5rem;
+            .cardProd{
+                margin-bottom: 1rem;
+            }
         }
     }
 }

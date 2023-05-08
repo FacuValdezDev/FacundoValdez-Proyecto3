@@ -164,7 +164,9 @@
 .containerCards {
   width: 100%;
   display: flex;
+  margin-top: 5rem;
   margin-left: 1rem;
+  height: 120vh;
 }
 .containerCards .cardProd {
   margin-left: 50px;
@@ -202,34 +204,37 @@
 
 /*Mq para celulares*/
 @media screen and (max-width: 576px) {
-  main {
-    height: 430vh;
+  .mainProd {
+    height: 435vh;
   }
-  main .tituloCards h1 {
+  .mainProd .tituloCards h1 {
     font-size: 2.5rem;
   }
-  main .tituloCards p {
+  .mainProd .tituloCards p {
     font-size: 1.1rem;
   }
-  main .containerCards {
+  .mainProd .containerCards {
     margin-left: -1.5rem;
   }
+  .mainProd .containerCards .cardProd {
+    margin-bottom: 1rem;
+  }
 }
-#mainMasinformacion {
+.mainMasinformacion {
   width: 100%;
-  height: 360vh;
+  height: 200vh;
 }
-#mainMasinformacion .mainNosotros {
+.mainMasinformacion .mainNosotros {
   height: 100vh;
   width: 100%;
   background-color: rgb(199, 196, 196);
 }
-#mainMasinformacion .mainNosotros .row {
+.mainMasinformacion .mainNosotros .row {
   display: flex;
   padding-left: 180px;
   padding-top: 50px;
 }
-#mainMasinformacion .mainNosotros .row .imgDerecha {
+.mainMasinformacion .mainNosotros .row .imgDerecha {
   border-top-left-radius: 1rem;
   border-bottom-left-radius: 1rem;
   width: 50%;
@@ -238,7 +243,7 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
-#mainMasinformacion .mainNosotros .row .pIzquierda {
+.mainMasinformacion .mainNosotros .row .pIzquierda {
   height: 90vh;
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
@@ -250,55 +255,65 @@
   font-family: "Roboto", sans-serif;
   text-decoration: none;
 }
-#mainMasinformacion .mainInformacion .tutoriales {
+.mainMasinformacion .mainInformacion .tutoriales {
   margin-top: 5rem;
   padding-top: 5rem;
   border-top: 2px solid #7a7a7a;
 }
-#mainMasinformacion .mainInformacion .tutoriales .tituloTutoriales {
+.mainMasinformacion .mainInformacion .tutoriales .tituloTutoriales {
   text-align: center;
   font-family: "Alumni Sans", sans-serif;
   font-size: 5rem;
 }
+.mainMasinformacion .mainInformacion .card-group .card {
+  margin-left: 3rem;
+}
 @media screen and (max-width: 576px) {
-  #mainMasinformacion .mainNosotros {
-    height: 138vh;
+  .mainMasinformacion .mainNosotros {
+    height: 150vh;
   }
-  #mainMasinformacion .mainNosotros .row {
+  .mainMasinformacion .mainNosotros .row {
     display: flex;
     padding: 0;
   }
-  #mainMasinformacion .mainNosotros .row .imgDerecha {
+  .mainMasinformacion .mainNosotros .row .imgDerecha {
     margin-top: 8rem;
-    margin-left: 1.1rem;
+    margin-left: 0.9rem;
     border-radius: 0px;
     height: 50vh;
     width: 93%;
   }
-  #mainMasinformacion .mainNosotros .row .pIzquierda {
+  .mainMasinformacion .mainNosotros .row .pIzquierda {
     border-radius: 0;
-    margin-left: 1.1rem;
+    margin-left: 0.9rem;
     text-align: center;
     font-size: 1rem;
     width: 93%;
-    height: 70vh;
+    height: 80vh;
   }
-  #mainMasinformacion .mainInformacion .card-group .card {
+  .mainMasinformacion .mainInformacion {
+    height: 20vh;
+    margin-top: 5rem;
+  }
+  .mainMasinformacion .mainInformacion .tutoriales .tituloTutoriales {
+    font-size: 3.3rem;
+  }
+  .mainMasinformacion .mainInformacion .card-group .card {
     background-color: rgb(199, 196, 196);
     border-radius: 1rem;
     border: 1px solid rgba(70, 68, 68, 0.459);
     height: 30rem;
   }
-  #mainMasinformacion .mainInformacion .card-group .card .cardImginfo {
+  .mainMasinformacion .mainInformacion .card-group .card .cardImginfo {
     padding: 5px;
     border-radius: 1rem;
     height: 60%;
   }
-  #mainMasinformacion .mainInformacion .card-group .card .cardInfo {
+  .mainMasinformacion .mainInformacion .card-group .card .cardInfo {
     text-align: center;
   }
-  #mainMasinformacion .mainInformacion .card-group .card .cardInfo .card-title {
-    font-size: 2rem;
+  .mainMasinformacion .mainInformacion .card-group .card .cardInfo .card-title {
+    font-size: 1.2rem;
   }
 }
 
