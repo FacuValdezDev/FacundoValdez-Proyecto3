@@ -1,104 +1,159 @@
-.mainMasinformacion{
-    width: 100%;
-    height: 200vh;
+.mainMasinformacion {
+  height: 200vh;
+  .mainNosotros {
+    height: 100vh;
+    background-color: $colorsecundario;
+    .rowInfo {
+      display: flex;
+      padding-left: 180px;
+      padding-top: 50px;
+      .imgDerecha {
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+        width: 50%;
+        height: 90vh;
+        background-image: url("../assets/img/pexels-manuel-geissinger-325229.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      .pIzquierda {
+        height: 90vh;
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        padding: 30px;
+        color: white;
+        background-color: rgb(68, 67, 67);
+        width: 38%;
+        font-size: 1.4rem;
+        font-family: $fuenteparrafo;
+        text-decoration: none;
+      }
+    }
+  }
+  .mainInformacion {
+    .tutoriales {
+      margin-top: 5rem;
+      padding-top: 5rem;
+      border-top: 2px solid #7a7a7a;
+      .tituloTutoriales {
+        text-align: center;
+        font-family: $fuentetitulo;
+        font-size: 5rem;
+      }
+    }
+    .card-group {
+      .card {
+        margin-left: 3rem;
+        margin-top: 5rem;
+        border-radius: 0.8rem;
+        border: 1px solid rgba(70, 68, 68, 0.459);
+        text-align: center;
+        .cardImginfo {
+          border-radius: 1rem;
+          padding: 5px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 576px) {
+  .mainMasinformacion {
+    height: 330vh;
     .mainNosotros {
-        height: 100vh;
-        width: 100%;
-        background-color: $colorsecundario;
-        .row {
-            display: flex;
-            padding-left: 180px;
-            padding-top: 50px;
-            .imgDerecha {
-                border-top-left-radius: 1rem;
-                border-bottom-left-radius: 1rem;
-                width: 50%;
-                height: 90vh;
-                background-image: url("../assets/img/pexels-manuel-geissinger-325229.jpg");
-                background-size: cover;
-                background-repeat: no-repeat;
-            }
-            .pIzquierda {
-                height: 90vh;
-                border-top-right-radius: 1rem;
-                border-bottom-right-radius: 1rem;
-                padding: 30px;
-                color: white;
-                background-color: rgb(68, 67, 67);
-                width: 38%;
-                font-size: 1.4rem;
-                font-family: $fuenteparrafo;
-                text-decoration: none;
-            }
+      width: 100%;
+      height: 130vh;
+      .rowInfo {
+        display: flex;
+        flex-wrap: wrap;
+        .imgDerecha {
+          width: 200%;
+          height: 50vh;
+          margin-left: -180px;
+          border-radius: 0;
         }
+        .pIzquierda {
+          margin-left: -180px;
+          width: 200%;
+          height: 68vh;
+          border-radius: 0;
+          font-size: 0.9rem;
+          text-align: center;
+          padding: 1rem;
+        }
+      }
     }
-    .mainInformacion{
-        .tutoriales{
-            margin-top: 5rem;
-            padding-top: 5rem;
-            border-top:2px solid #7a7a7a;
-            .tituloTutoriales{
-                text-align: center;
-                font-family: $fuentetitulo;
-                font-size: 5rem;
-            }
+    .mainInformacion {
+      .tutoriales {
+        .tituloTutoriales {
+          font-size: 3rem;
+          margin-bottom: 5rem;
         }
-        .card-group{
-            .card{
-                margin-left: 3rem;
-            }
+      }
+      .card-group {
+        margin-left: -1.5rem;
+        .card {
+          background-color: $colorsecundario;
+          border-radius: 1rem;
+          border: 1px solid rgba(70, 68, 68, 0.459);
+          text-align: center;
+          margin-bottom: -3rem;
+          .cardImginfo {
+            border-radius: 1rem;
+            padding: 5px;
+          }
         }
+      }
     }
-    @media screen and (max-width: 576px){
-        .mainNosotros {
-            height: 150vh;
-            .row{
-                display: flex;
-                padding: 0;
-                .imgDerecha{
-                    margin-top: 8rem;
-                    margin-left: 0.9rem;
-                    border-radius: 0px;
-                    height: 50vh;
-                    width: 93%;
-                }
-                .pIzquierda{
-                    border-radius: 0;
-                    margin-left: 0.9rem;
-                    text-align: center;
-                    font-size: 1rem;
-                    width: 93%;
-                    height: 80vh;
-                }
-            }
-        }
-        .mainInformacion{
-            height: 20vh;
-            margin-top: 5rem;
-            .tutoriales{
-                .tituloTutoriales{
-                    font-size: 3.3rem;
-                }
-            }
-            .card-group{
-                .card{
-                    background-color: $colorsecundario;
-                    border-radius:1rem;
-                    border: 1px solid rgba(70, 68, 68, 0.459);
-                    height: 30rem;
-                    .cardImginfo{
-                        padding: 5px;
-                        border-radius: 1rem;
-                        height: 60%;
-                    }
-                    .cardInfo{
-                        text-align: center;
-                        .card-title{
-                            font-size: 1.2rem;
-                        }
-                    }
-                }
-            }
-        }
-    }
+  }
+  // .mainNosotros {
+  //     height: 150vh;
+  //     .row{
+  //         display: flex;
+  //         padding: 0;
+  //         .imgDerecha{
+  //             margin-top: 8rem;
+  //             margin-left: 0.9rem;
+  //             border-radius: 0px;
+  //             height: 50vh;
+  //             width: 93%;
+  //         }
+  //         .pIzquierda{
+  //             border-radius: 0;
+  //             margin-left: 0.9rem;
+  //             text-align: center;
+  //             font-size: 1rem;
+  //             width: 93%;
+  //             height: 80vh;
+  //         }
+  //     }
+  // }
+  // .mainInformacion{
+  //     height: 20vh;
+  //     margin-top: 5rem;
+  //     .tutoriales{
+  //         .tituloTutoriales{
+  //             font-size: 3.3rem;
+  //         }
+  //     }
+  //     .card-group{
+  //         border: 3px solid blue;
+  //         .card{
+  //             background-color: $colorsecundario;
+  //             border-radius:1rem;
+  //             border: 1px solid rgba(70, 68, 68, 0.459);
+  //             height: 30rem;
+  //             .cardImginfo{
+  //                 padding: 5px;
+  //                 border-radius: 1rem;
+  //                 height: 60%;
+  //             }
+  //             .cardInfo{
+  //                 text-align: center;
+  //                 .card-title{
+  //                     font-size: 1.2rem;
+  //                 }
+  //             }
+  //         }
+  //     }
+  // }
 }

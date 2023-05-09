@@ -1,0 +1,26 @@
+.mainEventos{
+    height: 100vh;
+    .tituloEventos{
+        margin-top: 5rem;
+        text-align: center;
+        h1{
+            font-size: 4rem;
+            font-family: $fuentetitulo;
+            border-bottom: 2px solid #7a7a7a;;
+        }
+    }
+    .gridEventos{
+        margin-top: 5rem;
+        .cardEventos{
+            text-align: center;
+            font-family:$fuenteparrafo2;
+            background-color: $colorcards;
+        }
+    }
+}
+
+@media screen and (max-width: 576px){
+    .mainEventos{
+        height: 260vh;
+    }
+}

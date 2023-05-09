@@ -221,20 +221,18 @@
   }
 }
 .mainMasinformacion {
-  width: 100%;
   height: 200vh;
 }
 .mainMasinformacion .mainNosotros {
   height: 100vh;
-  width: 100%;
   background-color: rgb(199, 196, 196);
 }
-.mainMasinformacion .mainNosotros .row {
+.mainMasinformacion .mainNosotros .rowInfo {
   display: flex;
   padding-left: 180px;
   padding-top: 50px;
 }
-.mainMasinformacion .mainNosotros .row .imgDerecha {
+.mainMasinformacion .mainNosotros .rowInfo .imgDerecha {
   border-top-left-radius: 1rem;
   border-bottom-left-radius: 1rem;
   width: 50%;
@@ -243,7 +241,7 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
-.mainMasinformacion .mainNosotros .row .pIzquierda {
+.mainMasinformacion .mainNosotros .rowInfo .pIzquierda {
   height: 90vh;
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
@@ -267,58 +265,206 @@
 }
 .mainMasinformacion .mainInformacion .card-group .card {
   margin-left: 3rem;
+  margin-top: 5rem;
+  border-radius: 0.8rem;
+  border: 1px solid rgba(70, 68, 68, 0.459);
+  text-align: center;
 }
+.mainMasinformacion .mainInformacion .card-group .card .cardImginfo {
+  border-radius: 1rem;
+  padding: 5px;
+}
+
 @media screen and (max-width: 576px) {
+  .mainMasinformacion {
+    height: 330vh;
+  }
   .mainMasinformacion .mainNosotros {
-    height: 150vh;
+    width: 100%;
+    height: 130vh;
   }
-  .mainMasinformacion .mainNosotros .row {
+  .mainMasinformacion .mainNosotros .rowInfo {
     display: flex;
-    padding: 0;
+    flex-wrap: wrap;
   }
-  .mainMasinformacion .mainNosotros .row .imgDerecha {
-    margin-top: 8rem;
-    margin-left: 0.9rem;
-    border-radius: 0px;
+  .mainMasinformacion .mainNosotros .rowInfo .imgDerecha {
+    width: 200%;
     height: 50vh;
-    width: 93%;
-  }
-  .mainMasinformacion .mainNosotros .row .pIzquierda {
+    margin-left: -180px;
     border-radius: 0;
-    margin-left: 0.9rem;
-    text-align: center;
-    font-size: 1rem;
-    width: 93%;
-    height: 80vh;
   }
-  .mainMasinformacion .mainInformacion {
-    height: 20vh;
-    margin-top: 5rem;
+  .mainMasinformacion .mainNosotros .rowInfo .pIzquierda {
+    margin-left: -180px;
+    width: 200%;
+    height: 68vh;
+    border-radius: 0;
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 1rem;
   }
   .mainMasinformacion .mainInformacion .tutoriales .tituloTutoriales {
-    font-size: 3.3rem;
+    font-size: 3rem;
+    margin-bottom: 5rem;
+  }
+  .mainMasinformacion .mainInformacion .card-group {
+    margin-left: -1.5rem;
   }
   .mainMasinformacion .mainInformacion .card-group .card {
     background-color: rgb(199, 196, 196);
     border-radius: 1rem;
     border: 1px solid rgba(70, 68, 68, 0.459);
-    height: 30rem;
+    text-align: center;
+    margin-bottom: -3rem;
   }
   .mainMasinformacion .mainInformacion .card-group .card .cardImginfo {
-    padding: 5px;
     border-radius: 1rem;
-    height: 60%;
-  }
-  .mainMasinformacion .mainInformacion .card-group .card .cardInfo {
-    text-align: center;
-  }
-  .mainMasinformacion .mainInformacion .card-group .card .cardInfo .card-title {
-    font-size: 1.2rem;
+    padding: 5px;
   }
 }
+.mainEventos {
+  height: 100vh;
+}
+.mainEventos .tituloEventos {
+  margin-top: 5rem;
+  text-align: center;
+}
+.mainEventos .tituloEventos h1 {
+  font-size: 4rem;
+  font-family: "Alumni Sans", sans-serif;
+  border-bottom: 2px solid #7a7a7a;
+}
+.mainEventos .gridEventos {
+  margin-top: 5rem;
+}
+.mainEventos .gridEventos .cardEventos {
+  text-align: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  background-color: rgb(228, 228, 228);
+}
 
-#sectionFooter {
+@media screen and (max-width: 576px) {
+  .mainEventos {
+    height: 260vh;
+  }
+}
+.mainContacto {
   background-color: black;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainContacto .completeForm {
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 60px;
+  margin: 12px auto;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  position: relative;
+  z-index: 1;
+}
+.mainContacto .completeForm .imgContacto {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  padding: 0 20px;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  text-align: center;
+}
+.mainContacto .completeForm .imgContacto img {
+  filter: invert(1);
+  width: 100px;
+}
+.mainContacto .completeForm > input,
+.mainContacto .completeForm > textarea {
+  padding: 12px;
+  margin: 12px auto;
+  border: 1px solid #ccc;
+  color: #ddd;
+  background-color: #222;
+  border-radius: 4px;
+  display: block;
+  width: 70vw;
+}
+.mainContacto .completeForm > textarea {
+  height: 100px;
+  resize: none;
+}
+.mainContacto .completeForm > input[type=submit] {
+  max-width: 20vw;
+  padding-left: 1%;
+  padding-right: 1%;
+  cursor: pointer;
+  transition: 0.35s;
+}
+.mainContacto .completeForm > input[type=submit]:hover {
+  background-color: #555;
+}
+
+.go-top-container {
+  position: fixed;
+  bottom: 4rem;
+  right: 4rem;
+  width: 6.6rem;
+  height: 6.6rem;
+  z-index: -1;
+}
+.go-top-container .go-top-button {
+  width: 0rem;
+  height: 0rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.2s;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.go-top-button i {
+  position: absolute;
+  font-size: 2.7rem;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  color: #2071b2;
+  transition: 0.2s;
+}
+
+.show {
+  z-index: 10;
+}
+.show .go-top-button {
+  animation: popup 0.3s ease-in-out;
+  width: 6.6rem;
+  height: 6.6rem;
+  z-index: 11;
+}
+.show i {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+@keyframes popup {
+  0% {
+    width: 0rem;
+    height: 0rem;
+  }
+  50% {
+    width: 8rem;
+    height: 8rem;
+  }
+  100% {
+    width: 6.6rem;
+    height: 6.6rem;
+  }
+}
+#sectionFooter {
+  padding-top: 3rem;
+  background-color: rgb(12, 12, 12);
 }
 
 /*# sourceMappingURL=styles.css.map */

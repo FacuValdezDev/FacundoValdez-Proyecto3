@@ -13,48 +13,125 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
     <!-- Syle CSS -->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <title>DATATECH</title>
   </head>
   <body>
     <header class="header">
-      <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="../index.html">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid smnavbar collapseContainer">
+          <a class="navbar-brand" href="#">
             <img src="../assets/img/logo-removebg-preview.png" alt="LOGO">
           </a>
-          <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="container-fluid">
-            <div class="collapse navbar-collapse smnavbar" id="navbarNav">
-            <ul class="navbar-nav w-100 justify-content-end">
-              <li class="nav-item button">
-                <a class="nav-link text-white navItem" href="../index.html">Inicio</a>
-              </li>
-              <li class="nav-item button">
-                <a class="nav-link text-white navItem" href="./productos.html">Productos</a>
-              </li>
-              <li class="nav-item button">
-                <a class="nav-link text-white navItem" href="./mas_informacion.html">Nosotros</a>
-              </li>
-              <li class="nav-item button">
-                <a class="nav-link text-white navItem" href="#">Eventos</a>
-              </li>
-              <li class="nav-item button">
-                <a class="nav-link text-white navItem" href="./contacto.html">Contacto</a>
-              </li>
-            </ul>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav w-100 justify-content-around navbarCont">
+                <li class="nav-item">
+                  <a class="nav-link text-white button" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white button" href="./productos.html">Productos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white button" href="./mas_informacion.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white button" href="#">Eventos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white button" href="contacto.html">Contacto</a>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
       </nav>
-      <section id="sectionHeader" class=" col-sm-12 ">
-        <div class="tituloPrincipal">
-          <h1 class="text-white">Sea bienvenido a nuestros proximos eventos</h1>
-        </div>
-      </section>
     </header>
     <main>
+      <section class="container mainEventos">
+        <div class="tituloEventos">
+          <h1>Proximos Eventos</h1>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4 gridEventos">
+          <div class="col">
+            <div class="card h-100 cardEventos">
+              <div class="card-body">
+                <h5 class="card-title">Andrew Blum: ¿Qué es Internet realmente?</h5>
+                <p class="card-text">12/04/2023</p>
+                <p class="card-text">Esta charla es muy interesante porque va más allá de lo que piensan la mayoría de personas en el mundo sobre qué es en verdad internet y nos concientiza del esfuerzo que se realiza para que todos puedan tener acceso a internet y disfrutar de todos sus beneficios.
+
+                </p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Ultima actualizacion hace 10 minutos</small>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 cardEventos">
+              <div class="card-body">
+                <h5 class="card-title">Miguel García: La tecnología que cambia nuestra vida</h5>
+                <p class="card-text">25/04/2023</p>
+                <p class="card-text">Esta charla TED,  nos hace a reflexionar sobre cuán grande es nuestra dependencia en el día a día de la tecnología y cómo podría cambiar la vida si de la noche a la mañana estas desaparecieran.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Ultima actualizacion hace 10 minutos</small>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 cardEventos">
+              <div class="card-body">
+                <h5 class="card-title">Gerardo Richarte: Tecnología vs Privacidad</h5>
+                <p class="card-text">28/04/2023</p>
+                <p class="card-text">Durante más de 15 años se dedicó a la seguridad informática y habla sobre como la tecnología puede afectar la privacidad de las personas debido a la base centralizada de datos que poseen, lo cual les permite tener información sobre lo que nos gusta, desagrada, buscamos y pensamos.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Ultima actualizacion hace 10 minutos</small>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 cardEventos">
+              <div class="card-body">
+                <h5 class="card-title">Pranav Mistry: El potencial del sexto sentido de la tecnología</h5>
+                <p class="card-text">08/05/2023</p>
+                <p class="card-text">Pranav Mistry demuestra varias herramientas que ayudan a la interacción entre el mundo físico y el mundo de los datos – incluyendo una profunda mirada al dispositivo SixthSense y un nuevo, cambio de paradigma “laptop” de papel.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Ultima actualizacion hace 10 minutos</small>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 cardEventos">
+              <div class="card-body">
+                <h5 class="card-title">Lucy McRae. ¿Cómo puede la tecnología transformar el cuerpo humano?</h5>
+                <p class="card-text">16/05/2023</p>
+                <p class="card-text">Lucy McRae es una arquitecta corporal que investigó durante años los cambios que se podían producir en el cuerpo mediante la tecnología. Combinado biología y tecnología en nuestros cuerpos, descubrió una plataforma sin límites ni fronteras.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Ultima actualizacion hace 10 minutos</small>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 cardEventos">
+              <div class="card-body">
+                <h5 class="card-title"> Andrew McAfee: ¿Los robots nos quitan el trabajo?</h5>
+                <p class="card-text">27/05/2023</p>
+                <p class="card-text">Los robots y algoritmos están aprendiendo a realizar actividades como construir autos o escribir artículos. Andrew McAfee afirma que aún no hemos visto nada y se pregunta en qué trabajaremos los humanos cuando la mayoría de las profesiones se vean reemplazadas.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Ultima actualizacion hace 10 minutos</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer id="sectionFooter">
         <div class="container">
