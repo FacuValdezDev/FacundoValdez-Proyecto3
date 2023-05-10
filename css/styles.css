@@ -205,7 +205,7 @@
 /*Mq para celulares*/
 @media screen and (max-width: 576px) {
   .mainProd {
-    height: 435vh;
+    height: 420vh;
   }
   .mainProd .tituloCards h1 {
     font-size: 2.5rem;
@@ -344,15 +344,26 @@
 
 @media screen and (max-width: 576px) {
   .mainEventos {
-    height: 260vh;
+    height: 220vh;
   }
 }
 .mainContacto {
+  display: flex;
+  flex-direction: column;
   background-color: black;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.mainContacto .tituloContacto {
+  font-size: 4rem;
+  margin-bottom: 10rem;
+  font-family: "Alumni Sans", sans-serif;
+  border-bottom: 2px solid #7a7a7a;
+  padding-bottom: 4rem;
+  padding-left: 11.3rem;
+  width: 80%;
 }
 .mainContacto .completeForm {
   padding-left: 25px;
@@ -405,6 +416,12 @@
   background-color: #555;
 }
 
+@media screen and (max-width: 576px) {
+  .mainContacto .tituloContacto {
+    font-size: 1.5rem;
+    padding-left: 0;
+  }
+}
 .go-top-container {
   position: fixed;
   bottom: 4rem;
@@ -421,7 +438,6 @@
   transition: 0.2s;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
   z-index: -1;
 }
 
@@ -460,6 +476,12 @@
   100% {
     width: 6.6rem;
     height: 6.6rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .go-top-container {
+    bottom: 0;
+    right: 0;
   }
 }
 #sectionFooter {

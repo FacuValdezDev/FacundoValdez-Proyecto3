@@ -1,4 +1,16 @@
 .mainContacto {
+  display: flex;
+  flex-direction:column;
+  .tituloContacto{
+    font-size: 4rem;
+    margin-bottom: 10rem;
+    font-family: $fuentetitulo;
+    border-bottom: $bordelinea;
+    padding-bottom: 4rem;
+    padding-left: 11.3rem;
+    width: 80%;
+    
+  }
   background-color: black;
   height: 100vh;
   display: flex;
@@ -56,3 +68,11 @@
   }
 }
 
+@media screen and (max-width: 576px){
+  .mainContacto{
+    .tituloContacto{
+      font-size: 1.5rem;
+      padding-left: 0;
+    }
+  }
+}
