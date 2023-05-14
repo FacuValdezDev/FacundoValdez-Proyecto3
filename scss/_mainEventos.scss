@@ -21,6 +21,17 @@
 
 @media screen and (max-width: 576px){
     .mainEventos{
-        height: 220vh;
+        height: 270vh;
+        align-items: center;
+        .tituloEventos{
+            align-items: center;
+            h1{
+                font-size: $tamanotitulosm;
+            }
+        }
+        .cardEventos{
+            width: 85%;
+            margin-left: 2rem;
+        }
     }
 }

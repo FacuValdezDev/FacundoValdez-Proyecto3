@@ -110,16 +110,18 @@
   }
 }
 .main {
-  height: 170vh;
+  height: 300vh;
 }
 .main .carouselContainer {
   z-index: 1;
+}
+.main .carouselContainer .carousel-item .imgCarousel {
+  height: 80vh;
 }
 .main .tituloPrincipal {
   text-align: center;
   border-bottom: 2px solid #7a7a7a;
   padding-bottom: 10px;
-  margin: 0 50px;
   font-family: "Alumni Sans", sans-serif;
   z-index: 11;
   position: relative;
@@ -131,21 +133,100 @@
 .main .sectionCards .card {
   padding: 10px;
   margin: 0 10px;
+  height: 60vh;
+  width: 35rem;
+  text-align: center;
+  background-color: rgb(228, 228, 228);
+  border: 2px solid rgba(0, 0, 0, 0.322);
+  box-shadow: 10px 10px 5px rgba(83, 82, 82, 0.486);
+}
+.main .sectionCards .card .card-img-top {
+  width: 100%;
+  height: 28vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main .sectionCards .card .card-title {
+  font-size: 1.8rem;
+}
+.main .sectionCards .card .card-text {
+  margin-top: 1.5rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+.main #indexBeneficios .title-heading {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  border-top: 2px solid #7a7a7a;
+  padding-top: 3rem;
+}
+.main #indexBeneficios .title-heading h2 {
+  font-family: "Alumni Sans", sans-serif;
+  font-size: 4rem;
+}
+.main #indexBeneficios .card {
+  margin: 10px auto;
+  box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  height: 46vh;
+  transition: 0.3s;
+}
+.main #indexBeneficios .card:hover {
+  box-shadow: 1px 10px 16px 0 rgba(0, 0, 0, 0.3);
+}
+.main #indexBeneficios .card .card-title {
+  text-align: center;
+  color: #666666;
+  font-weight: bold;
+  font-family: "Open Sans";
+}
+.main #indexBeneficios .card .card-text {
+  font-weight: 500;
+  color: #66686b;
+}
+.main #indexBeneficios .card .card-image {
+  text-align: center;
+  height: 20vh;
+  margin-bottom: 20px;
+}
+.main #indexBeneficios .card .card-image img {
+  margin-top: 2rem;
+  padding-bottom: 3rem;
+  width: 40%;
+  height: 90%;
+}
+.main #indexBeneficios .card .card-text {
+  text-align: center;
 }
 
 @media screen and (max-width: 576px) {
   .main {
-    height: 190vh;
+    height: 510vh;
   }
   .main .carouselContainer {
     top: 100px;
+  }
+  .main .carouselContainer .carousel-item .imgCarousel {
+    height: 40vh;
   }
   .main .tituloPrincipal {
     position: relative;
   }
   .main .sectionCards .card {
-    margin-top: 6rem;
+    width: 95%;
+    height: 50vh;
+    margin-top: 4rem;
     text-align: center;
+  }
+  .main .sectionCards .card .card-title {
+    font-size: 1.4rem;
+  }
+  .main #indexBeneficios .title-heading h2 {
+    font-size: 2.5rem;
+  }
+  .main #indexBeneficios .card {
+    width: 85%;
   }
 }
 .tituloCards {
@@ -205,7 +286,7 @@
 /*Mq para celulares*/
 @media screen and (max-width: 576px) {
   .mainProd {
-    height: 465vh;
+    height: 435vh;
   }
   .mainProd .tituloCards h1 {
     font-size: 2.5rem;
@@ -344,7 +425,18 @@
 
 @media screen and (max-width: 576px) {
   .mainEventos {
-    height: 220vh;
+    height: 270vh;
+    align-items: center;
+  }
+  .mainEventos .tituloEventos {
+    align-items: center;
+  }
+  .mainEventos .tituloEventos h1 {
+    font-size: 2.5rem;
+  }
+  .mainEventos .cardEventos {
+    width: 85%;
+    margin-left: 2rem;
   }
 }
 .mainContacto {
@@ -418,7 +510,8 @@
 
 @media screen and (max-width: 576px) {
   .mainContacto .tituloContacto {
-    font-size: 1.5rem;
+    text-align: center;
+    font-size: 1.6rem;
     padding-left: 0;
   }
 }
