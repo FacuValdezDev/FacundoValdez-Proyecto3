@@ -1,15 +1,14 @@
 .mainContacto {
   display: flex;
-  flex-direction:column;
-  .tituloContacto{
+  flex-direction: column;
+  .tituloContacto {
     font-size: 4rem;
     margin-bottom: 10rem;
     font-family: $fuentetitulo;
-    border-bottom: $bordelinea;
+    border-bottom: 2px solid #7a7a7a;
     padding-bottom: 4rem;
     padding-left: 11.3rem;
     width: 80%;
-    
   }
   background-color: black;
   height: 100vh;
@@ -63,14 +62,14 @@
       transition: 0.35s;
     }
     > input[type="submit"]:hover {
-        background-color: #555;
-      }
+      background-color: #555;
+    }
   }
 }
 
-@media screen and (max-width: 576px){
-  .mainContacto{
-    .tituloContacto{
+@media screen and (max-width: 576px) {
+  .mainContacto {
+    .tituloContacto {
       text-align: center;
       font-size: 1.6rem;
       padding-left: 0;

@@ -1,4 +1,4 @@
 #sectionFooter{
     padding-top: 3rem;
-    background-color: $colorprincipal;
+    background-color:map-get($color, colorprincipal);
 }

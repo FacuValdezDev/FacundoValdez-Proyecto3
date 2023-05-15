@@ -14,7 +14,7 @@
         .cardEventos{
             text-align: center;
             font-family:$fuenteparrafo2;
-            background-color: $colorcards;
+            background-color: map-get($color, colorcards);
         }
     }
 }
@@ -26,7 +26,7 @@
         .tituloEventos{
             align-items: center;
             h1{
-                font-size: $tamanotitulosm;
+                font-size:map-get($tamanotexto, tamanotitulosm);
             }
         }
         .cardEventos{

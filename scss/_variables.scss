@@ -1,14 +1,22 @@
-$colorprincipal:rgb(12, 12, 12);
-$colorsecundario:rgb(199, 196, 196);
-$colorcards:rgb(228, 228, 228);
+// $tamanotitulo: 4rem;
+// $tamanoparrafo: 1.5rem;
+// $tamanotitulosm: 2.5rem;
+// $tamanoparrafosm: 1.1rem;
 
-$tamanotitulo:4rem;
-$tamanoparrafo:1.5rem;
-$tamanotitulosm:2.5rem;
-$tamanoparrafosm:1.1rem;
+$fuenteheader: "Titillium Web", sans-serif;
+$fuentetitulo: "Alumni Sans", sans-serif;
+$fuenteparrafo: "Roboto", sans-serif;
+$fuenteparrafo2: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+  "Lucida Sans", Arial, sans-serif;
 
-$fuenteheader:'Titillium Web', sans-serif;
-$fuentetitulo: 'Alumni Sans', sans-serif;
-$fuenteparrafo:'Roboto', sans-serif;
-$fuenteparrafo2:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
-
+$color: (
+  colorprincipal: rgb(12, 12, 12),
+  colorsecundario: rgb(199, 196, 196),
+  colorcards: rgb(228, 228, 228)
+);
+$tamanotexto: (
+  tamanotitulo: 4rem,
+  tamanoparrafo: 1.5rem,
+  tamanotitulosm: 2.5rem,
+  tamanoparrafosm: 1.1rem,
+);

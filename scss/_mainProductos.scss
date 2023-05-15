@@ -1,13 +1,14 @@
 .tituloCards{
-    text-align: center;
-    margin-top: 5rem;
+    @include borderline(center, 5rem, 5rem, 2px solid #7a7a7a );
+    // text-align: center;
+    // margin-top: 5rem;
     h1{
-        font-size: $tamanotitulo;
+        font-size:map-get($tamanotexto, tamanotitulo);
         font-family: $fuenteheader;
     }
     p{
         font-family: $fuenteparrafo;
-        font-size: $tamanoparrafo;
+        font-size:map-get($tamanotexto, tamanoparrafo);
     }
 }
 .containerCards{
@@ -16,8 +17,13 @@
     margin-top: 5rem;
     margin-left: 1rem;
     height: 120vh;
-    .cardProd{
-        
+    .cardProd--bronce{
+        margin-left:50px;
+        text-align: center;
+        border: 2px solid rgba(0, 0, 0, 0.322);
+        border-radius: 6px;
+        box-shadow: 10px 10px 5px rgba(83, 82, 82, 0.486);
+        background-color:brown;
         .h3Card{
             border-top:2px solid #7a7a7a;
             margin-top: 10px;
@@ -44,6 +50,14 @@
             }
         }
     }
+    .cardProd--platinum{
+        @extend .cardProd--bronce;
+        background-color: silver;
+    }
+    .cardProd--gold{
+        @extend .cardProd--bronce;
+        background-color: gold;
+    }
 }
 /*Mq para celulares*/
 @media screen and (max-width: 576px){
@@ -51,10 +65,10 @@
         height: 435vh;
         .tituloCards{
             h1{
-                font-size: $tamanotitulosm;
+                font-size:map-get($tamanotexto, tamanotitulosm);
             }
             p{
-                font-size: $tamanoparrafosm;
+                font-size:map-get($tamanotexto, tamanoparrafosm);
             }
         }
         .containerCards{

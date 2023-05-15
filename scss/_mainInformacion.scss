@@ -2,7 +2,7 @@
   height: 200vh;
   .mainNosotros {
     height: 100vh;
-    background-color: $colorsecundario;
+    background-color: map-get($color, colorsecundario);
     .rowInfo {
       display: flex;
       padding-left: 180px;
@@ -92,7 +92,7 @@
       .card-group {
         margin-left: -1.5rem;
         .card {
-          background-color: $colorsecundario;
+          background-color: map-get($color, colorsecundario);
           border-radius: 1rem;
           border: 1px solid rgba(70, 68, 68, 0.459);
           text-align: center;
@@ -105,55 +105,5 @@
       }
     }
   }
-  // .mainNosotros {
-  //     height: 150vh;
-  //     .row{
-  //         display: flex;
-  //         padding: 0;
-  //         .imgDerecha{
-  //             margin-top: 8rem;
-  //             margin-left: 0.9rem;
-  //             border-radius: 0px;
-  //             height: 50vh;
-  //             width: 93%;
-  //         }
-  //         .pIzquierda{
-  //             border-radius: 0;
-  //             margin-left: 0.9rem;
-  //             text-align: center;
-  //             font-size: 1rem;
-  //             width: 93%;
-  //             height: 80vh;
-  //         }
-  //     }
-  // }
-  // .mainInformacion{
-  //     height: 20vh;
-  //     margin-top: 5rem;
-  //     .tutoriales{
-  //         .tituloTutoriales{
-  //             font-size: 3.3rem;
-  //         }
-  //     }
-  //     .card-group{
-  //         border: 3px solid blue;
-  //         .card{
-  //             background-color: $colorsecundario;
-  //             border-radius:1rem;
-  //             border: 1px solid rgba(70, 68, 68, 0.459);
-  //             height: 30rem;
-  //             .cardImginfo{
-  //                 padding: 5px;
-  //                 border-radius: 1rem;
-  //                 height: 60%;
-  //             }
-  //             .cardInfo{
-  //                 text-align: center;
-  //                 .card-title{
-  //                     font-size: 1.2rem;
-  //                 }
-  //             }
-  //         }
-  //     }
-  // }
+  
 }
