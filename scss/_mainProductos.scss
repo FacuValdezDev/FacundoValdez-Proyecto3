@@ -1,81 +1,92 @@
-.tituloCards{
-    @include borderline(center, 5rem, 5rem, 2px solid #7a7a7a );
-    // text-align: center;
-    // margin-top: 5rem;
-    h1{
-        font-size:map-get($tamanotexto, tamanotitulo);
-        font-family: $fuenteheader;
+.mainProd {
+    width: 100%;
+  .tituloCards {
+    @include borderline(center, 5rem, 5rem, 2px solid #7a7a7a);
+    h1 {
+      font-size: map-get($tamanotexto, tamanotitulo);
+      font-family: $fuenteheader;
     }
-    p{
-        font-family: $fuenteparrafo;
-        font-size:map-get($tamanotexto, tamanoparrafo);
+    p {
+      font-family: $fuenteparrafo;
+      font-size: map-get($tamanotexto, tamanoparrafo);
     }
-}
-.containerCards{
+  }
+  .containerCards {
     width: 100%;
     display: flex;
+    justify-content: space-evenly;
     margin-top: 5rem;
-    margin-left: 1rem;
     height: 120vh;
-    .cardProd--bronce{
-        margin-left:50px;
-        text-align: center;
-        border: 2px solid rgba(0, 0, 0, 0.322);
-        border-radius: 6px;
-        box-shadow: 10px 10px 5px rgba(83, 82, 82, 0.486);
-        background: linear-gradient(to bottom right, #8C5836, #B87333, #DAA520, #B87333, #8C5836);
-        .h3Card{
-            border-top:2px solid #7a7a7a;
-            margin-top: 10px;
-            margin: 10px 20px;
+    .cardProd--bronce {
+      margin-left: 50px;
+      text-align: center;
+      border: 2px solid rgba(0, 0, 0, 0.322);
+      border-radius: 6px;
+      box-shadow: 10px 10px 5px rgba(83, 82, 82, 0.486);
+      background: linear-gradient(
+        to bottom right,
+        #8c5836,
+        #b87333,
+        #daa520,
+        #b87333,
+        #8c5836
+      );
+      .h3Card {
+        border-top: 2px solid #7a7a7a;
+        margin-top: 10px;
+        margin: 10px 20px;
+      }
+      p {
+        text-align: left;
+        margin-left: 2rem;
+      }
+      .precio {
+        font-size: 2rem;
+        color: rgb(3, 3, 58);
+      }
+      .btn-precio {
+        background-color: rgb(59, 59, 129);
+        color: white;
+        text-decoration: none;
+        padding: 12px;
+        border-radius: 4px;
+        display: block;
+        margin: 0 4rem;
+        &:hover {
+          background-color: rgb(84, 84, 197);
         }
-        p{
-            text-align: left;
-            margin-left: 2rem;
-        }
-        .precio{
-            font-size:2rem;
-            color: rgb(3, 3, 58);
-        }
-        .btn-precio{
-            background-color: rgb(59, 59, 129);
-            color: white;
-            text-decoration: none;
-            padding: 12px;
-            border-radius: 4px;
-            display: block;
-            margin: 0 4rem;
-            &:hover{
-                background-color: rgb(84, 84, 197);
-            }
-        }
+      }
     }
-    .cardProd--platinum{
-        @extend .cardProd--bronce;
-        background: radial-gradient(at top right, #333333, #333333 40%, #C0C0C0 45%, #C0C0C0);
+    .cardProd--platinum {
+      @extend .cardProd--bronce;
+      background: linear-gradient(to bottom right, #666666, #cccccc, #666666);
     }
-    .cardProd--gold{
-        @extend .cardProd--bronce;
-        background:gold;
+    .cardProd--gold {
+      @extend .cardProd--bronce;
+      background: linear-gradient(to bottom right, #8c7d39, #ffd700, #8c7d39);
     }
+  }
 }
+
 /*Mq para celulares*/
-@media screen and (max-width: 576px){
-    .mainProd{
-        height: 435vh;
-        .tituloCards{
-            h1{
-                font-size:map-get($tamanotexto, tamanotitulosm);
-            }
-            p{
-                font-size:map-get($tamanotexto, tamanoparrafosm);
-            }
-        }
-        .containerCards{
-            margin-left: -1.5rem;
-            .cardProd{
-                margin-bottom: 1rem;
-            }
-        }
+@media screen and (max-width: 576px) {
+  .mainProd {
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    .tituloCards {
+      h1 {
+        font-size: map-get($tamanotexto, tamanotitulosm);
+      }
+      p {
+        font-size: map-get($tamanotexto, tamanoparrafosm);
+      }
     }
+    .containerCards {
+      margin-left: -1.5rem;
+      .cardProd--bronce {
+        margin-bottom: 1rem;
+      }
+    }
+  }
 }
