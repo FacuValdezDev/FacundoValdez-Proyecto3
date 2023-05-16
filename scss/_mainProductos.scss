@@ -23,7 +23,7 @@
         border: 2px solid rgba(0, 0, 0, 0.322);
         border-radius: 6px;
         box-shadow: 10px 10px 5px rgba(83, 82, 82, 0.486);
-        background-color:brown;
+        background: linear-gradient(to bottom right, #8C5836, #B87333, #DAA520, #B87333, #8C5836);
         .h3Card{
             border-top:2px solid #7a7a7a;
             margin-top: 10px;
@@ -52,11 +52,11 @@
     }
     .cardProd--platinum{
         @extend .cardProd--bronce;
-        background-color: silver;
+        background: radial-gradient(at top right, #333333, #333333 40%, #C0C0C0 45%, #C0C0C0);
     }
     .cardProd--gold{
         @extend .cardProd--bronce;
-        background-color: gold;
+        background:gold;
     }
 }
 /*Mq para celulares*/
