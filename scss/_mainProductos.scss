@@ -74,6 +74,7 @@
     display: flex;
     flex-wrap:wrap;
     flex-direction: row;
+    padding-bottom: 150rem;
     .tituloCards {
       h1 {
         font-size: map-get($tamanotexto, tamanotitulosm);
