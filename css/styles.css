@@ -239,7 +239,6 @@
   display: flex;
   justify-content: space-evenly;
   margin-top: 5rem;
-  height: 120vh;
 }
 .mainProd .containerCards .cardProd--bronce, .mainProd .containerCards .cardProd--gold, .mainProd .containerCards .cardProd--platinum {
   margin-left: 50px;
@@ -355,7 +354,7 @@
 
 @media screen and (max-width: 576px) {
   .mainMasinformacion .mainNosotros {
-    height: 130vh;
+    height: auto;
   }
   .mainMasinformacion .mainNosotros .rowInfo {
     display: flex;
@@ -372,7 +371,7 @@
     margin-left: -180px;
     width: 200%;
     border-radius: 0;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     text-align: center;
     padding: 1rem;
   }
