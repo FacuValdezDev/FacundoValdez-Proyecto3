@@ -56,10 +56,6 @@
           background-color: rgb(84, 84, 197);
         }
       }
-      &:hover {   
-        background-color: black;
-
-      }
     }
     .cardProd--platinum {
       @extend .cardProd--bronce;

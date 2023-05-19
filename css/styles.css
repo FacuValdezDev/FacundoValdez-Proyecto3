@@ -192,9 +192,6 @@
 }
 
 @media screen and (max-width: 576px) {
-  .main {
-    height: 510vh;
-  }
   .main .carouselContainer {
     top: 100px;
   }
@@ -277,9 +274,6 @@
 .mainProd .containerCards .cardProd--bronce .btn-precio:hover, .mainProd .containerCards .cardProd--gold .btn-precio:hover, .mainProd .containerCards .cardProd--platinum .btn-precio:hover {
   background-color: rgb(84, 84, 197);
 }
-.mainProd .containerCards .cardProd--bronce:hover, .mainProd .containerCards .cardProd--gold:hover, .mainProd .containerCards .cardProd--platinum:hover {
-  background-color: black;
-}
 .mainProd .containerCards .cardProd--platinum {
   background: linear-gradient(to bottom right, #666666, #cccccc, #666666);
 }
@@ -306,9 +300,6 @@
   .mainProd .containerCards .cardProd--bronce, .mainProd .containerCards .cardProd--platinum, .mainProd .containerCards .cardProd--gold {
     margin-bottom: 1rem;
   }
-}
-.mainMasinformacion {
-  height: 200vh;
 }
 .mainMasinformacion .mainNosotros {
   height: 100vh;
@@ -363,16 +354,13 @@
 }
 
 @media screen and (max-width: 576px) {
-  .mainMasinformacion {
-    height: 330vh;
-  }
   .mainMasinformacion .mainNosotros {
-    width: 100%;
     height: 130vh;
   }
   .mainMasinformacion .mainNosotros .rowInfo {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
   }
   .mainMasinformacion .mainNosotros .rowInfo .imgDerecha {
     width: 200%;
@@ -383,7 +371,6 @@
   .mainMasinformacion .mainNosotros .rowInfo .pIzquierda {
     margin-left: -180px;
     width: 200%;
-    height: 68vh;
     border-radius: 0;
     font-size: 0.9rem;
     text-align: center;
@@ -391,7 +378,6 @@
   }
   .mainMasinformacion .mainInformacion .tutoriales .tituloTutoriales {
     font-size: 3rem;
-    margin-bottom: 5rem;
   }
   .mainMasinformacion .mainInformacion .card-group {
     margin-left: -1.5rem;
@@ -401,7 +387,6 @@
     border-radius: 1rem;
     border: 1px solid rgba(70, 68, 68, 0.459);
     text-align: center;
-    margin-bottom: -3rem;
   }
   .mainMasinformacion .mainInformacion .card-group .card .cardImginfo {
     border-radius: 1rem;
@@ -409,7 +394,7 @@
   }
 }
 .mainEventos {
-  height: 100vh;
+  margin-bottom: 4%;
 }
 .mainEventos .tituloEventos {
   margin-top: 5rem;
@@ -431,7 +416,6 @@
 
 @media screen and (max-width: 576px) {
   .mainEventos {
-    height: 270vh;
     align-items: center;
   }
   .mainEventos .tituloEventos {
@@ -450,7 +434,6 @@
   flex-direction: column;
   background-color: black;
   height: 100vh;
-  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -516,6 +499,7 @@
 
 @media screen and (max-width: 576px) {
   .mainContacto .tituloContacto {
+    margin-top: 5rem;
     text-align: center;
     font-size: 1.6rem;
     padding-left: 0;
@@ -584,6 +568,10 @@
   }
 }
 #sectionFooter {
+  display: flex;
+  position: relative;
+  bottom: 0;
+  width: 100%;
   padding-top: 3rem;
   background-color: rgb(12, 12, 12);
 }
