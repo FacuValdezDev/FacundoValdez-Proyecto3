@@ -1,4 +1,8 @@
 #sectionFooter{
+    display:flex ;
+    position: relative;
+    bottom: 0;
+    width: 100%;
     padding-top: 3rem;
     background-color:map-get($color, colorprincipal);
 }

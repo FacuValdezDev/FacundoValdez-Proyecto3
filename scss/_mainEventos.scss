@@ -1,5 +1,5 @@
 .mainEventos{
-    height: 100vh;
+    margin-bottom: 4%;
     .tituloEventos{
         margin-top: 5rem;
         text-align: center;
@@ -21,7 +21,6 @@
 
 @media screen and (max-width: 576px){
     .mainEventos{
-        height: 270vh;
         align-items: center;
         .tituloEventos{
             align-items: center;
