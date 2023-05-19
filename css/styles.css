@@ -85,7 +85,6 @@
 
 @media screen and (max-width: 768px) {
   .header .navbar .navbarCont {
-    height: 40vh;
     width: 100%;
     margin-left: -24px;
     position: relative;
@@ -192,8 +191,12 @@
 }
 
 @media screen and (max-width: 576px) {
+  .main {
+    width: 100%;
+  }
   .main .carouselContainer {
     top: 100px;
+    width: 100%;
   }
   .main .carouselContainer .carousel-item .imgCarousel {
     height: 40vh;
@@ -210,11 +213,22 @@
   .main .sectionCards .card .card-title {
     font-size: 1.4rem;
   }
+  .main .sectionCards .card .card-text {
+    font-size: 0.8rem;
+  }
+  .main .sectionCards .card .card-text .cardHidden {
+    display: none;
+    visibility: hidden;
+  }
   .main #indexBeneficios .title-heading h2 {
     font-size: 2.5rem;
   }
   .main #indexBeneficios .card {
     width: 85%;
+  }
+  .main #indexBeneficios .card .card-text span {
+    display: none;
+    visibility: hidden;
   }
 }
 .mainProd {
@@ -239,6 +253,7 @@
   display: flex;
   justify-content: space-evenly;
   margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 .mainProd .containerCards .cardProd--bronce, .mainProd .containerCards .cardProd--gold, .mainProd .containerCards .cardProd--platinum {
   margin-left: 50px;
@@ -285,41 +300,48 @@
   .mainProd {
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: 150rem;
   }
   .mainProd .tituloCards h1 {
     font-size: 2.5rem;
   }
   .mainProd .tituloCards p {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
   .mainProd .containerCards {
     margin-left: -1.5rem;
+    display: flex;
+    flex-direction: column;
   }
   .mainProd .containerCards .cardProd--bronce, .mainProd .containerCards .cardProd--platinum, .mainProd .containerCards .cardProd--gold {
+    padding: 10px;
     margin-bottom: 1rem;
   }
+  .mainProd .containerCards .cardProd--bronce .precio, .mainProd .containerCards .cardProd--platinum .precio, .mainProd .containerCards .cardProd--gold .precio {
+    font-size: 1.5rem;
+  }
+}
+.mainMasinformacion {
+  width: 100%;
 }
 .mainMasinformacion .mainNosotros {
-  height: 100vh;
+  height: auto;
   background-color: rgb(199, 196, 196);
 }
 .mainMasinformacion .mainNosotros .rowInfo {
   display: flex;
-  padding-left: 180px;
-  padding-top: 50px;
+  flex-direction: row;
+  justify-content: center;
+  padding: 2rem;
 }
 .mainMasinformacion .mainNosotros .rowInfo .imgDerecha {
   border-top-left-radius: 1rem;
   border-bottom-left-radius: 1rem;
   width: 50%;
-  height: 90vh;
   background-image: url("../assets/img/pexels-manuel-geissinger-325229.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 .mainMasinformacion .mainNosotros .rowInfo .pIzquierda {
-  height: 90vh;
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
   padding: 30px;
@@ -340,6 +362,9 @@
   font-family: "Alumni Sans", sans-serif;
   font-size: 5rem;
 }
+.mainMasinformacion .mainInformacion .card-group {
+  margin-bottom: 2rem;
+}
 .mainMasinformacion .mainInformacion .card-group .card {
   margin-left: 3rem;
   margin-top: 5rem;
@@ -357,19 +382,18 @@
     height: auto;
   }
   .mainMasinformacion .mainNosotros .rowInfo {
+    align-items: center;
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    flex-direction: column;
   }
   .mainMasinformacion .mainNosotros .rowInfo .imgDerecha {
-    width: 200%;
+    width: 100%;
     height: 50vh;
-    margin-left: -180px;
     border-radius: 0;
   }
   .mainMasinformacion .mainNosotros .rowInfo .pIzquierda {
-    margin-left: -180px;
-    width: 200%;
+    width: 100%;
     border-radius: 0;
     font-size: 0.8rem;
     text-align: center;
@@ -497,6 +521,9 @@
 }
 
 @media screen and (max-width: 576px) {
+  .mainContacto {
+    height: auto;
+  }
   .mainContacto .tituloContacto {
     margin-top: 5rem;
     text-align: center;

@@ -16,6 +16,7 @@
     display: flex;
     justify-content: space-evenly;
     margin-top: 5rem;
+    margin-bottom: 5rem;
     .cardProd--bronce {
       margin-left: 50px;
       text-align: center;
@@ -72,7 +73,6 @@
   .mainProd {
     display: flex;
     flex-wrap:wrap;
-    padding-bottom: 150rem;
     .tituloCards {
       h1 {
         font-size: map-get($tamanotexto, tamanotitulosm);
@@ -83,8 +83,14 @@
     }
     .containerCards {
       margin-left: -1.5rem;
+      display: flex;
+      flex-direction: column;
       .cardProd--bronce {
+        padding: 10px;
         margin-bottom: 1rem;
+        .precio{
+          font-size:1.5rem;
+        }
       }
     }
   }

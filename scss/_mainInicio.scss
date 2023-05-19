@@ -108,8 +108,10 @@
 
 @media screen and (max-width: 576px) {
     .main {
+        width: 100%;
         .carouselContainer {
             top: 100px;
+            width: 100%;
             .carousel-item{
                 .imgCarousel{
                     height: 40vh;
@@ -131,6 +133,13 @@
                 .card-title{
                     font-size: 1.4rem   ;
                 }
+                .card-text{
+                    font-size: 0.8rem;
+                    .cardHidden{
+                        display: none;
+                        visibility: hidden;
+                    }
+                }
             }
         }
         #indexBeneficios{
@@ -141,6 +150,12 @@
             }
             .card{
                 width: 85%;
+                .card-text{
+                    span{
+                        display: none;
+                        visibility: hidden;
+                    }
+                }
             }
         }
     }
