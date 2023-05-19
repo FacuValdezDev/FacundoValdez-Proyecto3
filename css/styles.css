@@ -277,6 +277,9 @@
 .mainProd .containerCards .cardProd--bronce .btn-precio:hover, .mainProd .containerCards .cardProd--gold .btn-precio:hover, .mainProd .containerCards .cardProd--platinum .btn-precio:hover {
   background-color: rgb(84, 84, 197);
 }
+.mainProd .containerCards .cardProd--bronce:hover, .mainProd .containerCards .cardProd--gold:hover, .mainProd .containerCards .cardProd--platinum:hover {
+  background-color: black;
+}
 .mainProd .containerCards .cardProd--platinum {
   background: linear-gradient(to bottom right, #666666, #cccccc, #666666);
 }
@@ -289,7 +292,6 @@
   .mainProd {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
     padding-bottom: 150rem;
   }
   .mainProd .tituloCards h1 {
